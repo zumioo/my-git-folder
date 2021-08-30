@@ -2,13 +2,11 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>HOTEL IMPERIAL RESORT TOKYO</title>
+<title>お問い合わせ - HOTEL IMPERIAL RESORT TOKYO</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
 </head>
 
-<body>
+<body id="contact">
 <header id="top">
 	<h1><a href="index.html"><img src="images/logo.png" alt="HOTEL IMPERIAL RESORT TOKYO"></a></h1>
 </header>
@@ -20,24 +18,33 @@
 		<li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
 	</ul>
 </nav>
-<div id="graphic">
+<div id="breadcrumb">
 	<ul>
-		<li class="now"><img class="image1" src="images/slide1.jpg" alt="こだわりの空間で心地よいひとときを"></li>
-		<li><img class="image2" src="images/slide2.jpg" alt="幸福に満ちた神聖なチャペル"></li>
-		<li><img class="image3" src="images/slide3.jpg" alt="「ありがとう」の気持ちが伝わるウェディング"></li>
+		<li><a href="index.html">ホーム</a></li>
+		<li>お問い合わせ</li>
 	</ul>
 </div>
 <div id="contents">
 	<div id="main">
-		<section id="news">
-			<h2>お知らせ</h2>
+		<article>
+			<h1>お問い合わせ</h1>
+			<p>会場やプランについてのお問い合わせは、下記フォームよりお気軽にお寄せください。</p>
 			<ul>
-				<li><time datetime="2014-04-25">2014年04月25日</time>ランチ・ディナーのテイスティングフェア開催決定。ただいまご予約受付中です。</li>
-				<li><time datetime="2014-03-03">2014年03月03日</time>春の特別見学会</li>
-				<li><time datetime="2014-02-20">2014年02月20日</time>期間限定の割引プラン</li>
-				<li><time datetime="2014-02-14">2014年02月14日</time>バレンタインフェア</li>
+				<li>必要事項を記入し、「確認する」をクリックしてください。</li>
+				<li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
 			</ul>
-		</section>
+			<form action="#">
+				<p><label>お名前（必須）<br>
+				<input type="text" name="name" required></label></p>
+				<p><label>メールアドレス（必須）<br>
+				<input type="email" name="mail" required></label></p>
+				<p>お問い合わせ種類<br>
+				<label><input type="radio" name="kind" value="0">事前のご相談</label>　<label><input type="radio" name="kind" value="1">その他</label></p>
+				<p><label>内容<br>
+				<textarea name="comment"></textarea></label></p>
+				<p><input type="submit" value="確認する"></p>
+			</form>
+		</article>
 	</div>
 	<div id="sub">
 		<aside>
@@ -62,6 +69,5 @@
 	<address>東京都千代田区X-X-X 電話 0120-000-XXX 営業時間 11:00～20:00(水曜日定休)</address>
 	<p id="copyright"><small>Copyright &copy;2014 HOTEL IMPERIAL RESORT TOKYO All rights reserved.</small></p>
 </footer>
-<script src="js/slideshow.js"></script>
 </body>
 </html>
