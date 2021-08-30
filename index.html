@@ -1,18 +1,30 @@
 <!DOCTYPE html>
+<!-- htmlタグのlang属性にはドキュメントの言語を指定する。--> 
 <html lang="ja">
 <head>
+<!-- metaタグのcharset属性には文字コードを記載する。--> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- titleタグはWEBページを開いた際に、タグ部分に表示される名前--> 
 <title>HOTEL IMPERIAL RESORT TOKYO</title>
+<!--linkタグで外部CSSタグを読み込む。
+rel属性にはstylesheetを設定し、hrefにはCSSファイルの相対パスを記載する。-->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
 </head>
 
 <body>
+<!--headerタグにはid属性を指定し、ページトップに戻れるようにしておくと良い-->
 <header id="top">
+	<!--h1タグは見出しを意味する。h1⇨h6まであり数字が小さいほど大きく表示される。-->
+	<!--aタグはリンクを意味するタグ。href属性でパスを指定する。target属性に"_blank"を指定するとリンク先を別タグで開く。-->
+	<!--imgダグで画像を表示する。src属性で画像のパスを指定する。alt属性には画像が表示できない場合代わりに表示するテキストを記載する。
+	　　　width・height属性で画像の表示サイズを指定できる。省略すると状況に応じて拡大・縮小するためスマホやタブレット端末に対応させるときは記載しない。-->
 	<h1><a href="index.html"><img src="images/logo.png" alt="HOTEL IMPERIAL RESORT TOKYO"></a></h1>
 </header>
 <nav>
+	<!--ulタグで非序列リストを作成できる。箇条書きの項目はliタグに記載する。各項目の先頭には・が記載される。-->
+	<!--olタグで序列リストを作成できる。各項目の先頭には、数字が記載される。-->
 	<ul>
 		<li id="nav_concept"><a href="concept.html">結婚式場のコンセプト</a></li>
 		<li id="nav_plan"><a href="plan.html">プランのご案内</a></li>
@@ -20,6 +32,7 @@
 		<li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
 	</ul>
 </nav>
+<!--divタグは「汎用ブロック」と呼ばれ、要素をグループ化するために使用する。-->
 <div id="graphic">
 	<ul>
 		<li class="now"><img class="image1" src="images/slide1.jpg" alt="こだわりの空間で心地よいひとときを"></li>
