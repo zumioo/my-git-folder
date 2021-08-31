@@ -104,6 +104,7 @@ nav ul li a:hover {
 	padding: 20px 0 20px 175px;
 	border-bottom: 1px dotted #6c5f45;
 	color: #342300;
+	/*テキストのインデントを調整するプロパティ。マイナスで記載することも可能。*/
 	text-indent: -175px;
 }
 #news ul li time {
