@@ -45,6 +45,7 @@ rel属性にはstylesheetを設定し、hrefにはCSSファイルの相対パス
 		<section id="news">
 			<h2>お知らせ</h2>
 			<ul>
+				<!--timeタグは日時を意味するタグ。datetime属性の値はコンピュータの何らかの処理に利用できる。-->
 				<li><time datetime="2014-04-25">2014年04月25日</time>ランチ・ディナーのテイスティングフェア開催決定。ただいまご予約受付中です。</li>
 				<li><time datetime="2014-03-03">2014年03月03日</time>春の特別見学会</li>
 				<li><time datetime="2014-02-20">2014年02月20日</time>期間限定の割引プラン</li>
@@ -56,6 +57,8 @@ rel属性にはstylesheetを設定し、hrefにはCSSファイルの相対パス
 		<aside>
 			<div class="bnr_inner">
 				<a href="plan.html">
+				<!--dlタグは定義リストと呼ばれる特殊な箇条書きの一種
+				　　　中にdtで用語を、ddで説明を囲むことで作られる。-->
 				<dl>
 					<dt><img src="images/bnr_plan.jpg" alt="プランのご案内"></dt>
 					<dd>標準のプランをご紹介いたします。</dd>
@@ -71,8 +74,12 @@ rel属性にはstylesheetを設定し、hrefにはCSSファイルの相対パス
 	</div>
 </div>
 <footer>
+	<!--aタグのhref属性に「#〇〇」と記載すると同じページ内の〇〇というid属性の要素にリンクできる。-->
 	<p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+	<!--addressタグは連絡先を意味するタグです。
+	　　　article内に記述すると記事を書いた人の、それ以外の箇所に記述するとページ全体の連絡先という意味になる。-->
 	<address>東京都千代田区X-X-X 電話 0120-000-XXX 営業時間 11:00～20:00(水曜日定休)</address>
+	<!--smallはサイドコメントと呼ばれている。コピーライトやライセンス情報、免責事項、法的規則などを意味する。-->
 	<p id="copyright"><small>Copyright &copy;2014 HOTEL IMPERIAL RESORT TOKYO All rights reserved.</small></p>
 </footer>
 <script src="js/slideshow.js"></script>
