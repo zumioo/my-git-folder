@@ -137,7 +137,11 @@ nav ul li a:hover {
 
 /* 「プランのご案内」ページ ここから↓ */
 table {
+	/*collapseにすると隣接するセルの罫線が1つになる。separateにするとセルごとに罫線が引かれる。*/
 	border-collapse: collapse;
+	/*table-layoutプロパティを使うと、
+	<table>タグにwidthプロパティが指定されている場合各列の幅を自動(auto)にするか、均等(fixed)にするか選択できる。*/
+	/*separateの時にborder-spacingを使うと、罫線と罫線の間の隙間を指定できる。*/
 }
 caption {
 	text-align: left;
@@ -151,16 +155,21 @@ table th, table td {
 	padding: 15px;
 	border: 1px solid #6c5f45;
 }
+/*E:first-child擬似クラスは、要素Eのうち兄弟要素のうち最初のEにマッチする。*/
 table tr th:first-child {
 	width: 70px;
 }
 table tbody th,
 table tbody td {
+	/*セル内のテキストまたは画像などのコンテンツを上・中央・下揃えにすることができる。
+	　　tableではなく、インラインレベル要素に指定することで、テキストの整列位置を指定することができる。*/
 	vertical-align: top;
 }
 table thead tr th {
 	background-color: #eee8cc;
 }
+/*E:nth-child(n)擬似クラスは、要素Eの兄弟要素のうちn番目のEにマッチする。
+　　nには0以上の整数を記載。数式も可。oddは奇数、evenは偶数のように指定するのも可*/
 table tbody tr:nth-child(odd) {
 	background-color: #ffffff;
 }
